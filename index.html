@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brasileirão</title>
-</head>
-<body>
-    
-    <script src="scripts/indexScript.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="indexStyle.css" />
+  </head>
+  <body>
+    <header><h1>Tormenta Brasileira</h1></header>
+    <main>
+      <div
+        id="wg-api-football-standings"
+        data-host="v3.football.api-sports.io"
+        data-key="d2fd9843ebba3756eed3ae83b6466a27"
+        data-league="71"
+        data-team=""
+        data-season="2024"
+        data-theme="white"
+        data-show-errors="false"
+        data-show-logos="true"
+        class="wg_loader"
+      ></div>
+    </main>
+
+    <script
+      type="module"
+      src="https://widgets.api-sports.io/2.0.3/widgets.js"
+    ></script>
+
+    <script src="indexScript.js"></script>
+  </body>
 </html>
