@@ -9,15 +9,30 @@
 
 header {
   width: 100%;
-  background-color: grey;
+  background-color: rgb(218, 218, 218);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 15vh;
+}
+
+header img {
+  height: 13vh;
+  padding-right: 2vh;
+}
+
+header img:hover {
+  transform: scale(105%);
+  transition: 0.2s;
+}
+
+header h1 {
+  font-size: 5vh;
+  font-weight: bold;
 }
 
 main {
-  height: 90vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
 }
