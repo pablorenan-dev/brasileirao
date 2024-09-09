@@ -50,6 +50,12 @@ setTimeout(function traduzirSiglasColunas() {
       case "L":
         todasSiglas[i].innerHTML = "D";
         break;
+
+      case `<img class="wg_flag" src="https://media.api-sports.io/flags/br.svg" loading="lazy" onerror="this.style.display=&quot;none&quot;"> Brazil: Serie A`:
+        todasSiglas[
+          i
+        ].innerHTML = `<img class="wg_flag" src="https://media.api-sports.io/flags/br.svg" loading="lazy" onerror="this.style.display=&quot;none&quot;"> Brasileirão`;
+        break;
     }
   }
 }, 2000); // 2000 milissegundos = 2 segundos
