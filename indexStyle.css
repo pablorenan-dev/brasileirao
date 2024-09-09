@@ -7,9 +7,13 @@
   font-family: "Lato", Tahoma;
 }
 
+:root {
+  --color-verde: #00fc69;
+}
+
 header {
   width: 100%;
-  background-color: rgb(218, 218, 218);
+  background-color: var(--color-verde);
   display: flex;
   justify-content: center;
   align-items: center;

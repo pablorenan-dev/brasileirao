@@ -27,3 +27,29 @@ setTimeout(function traduzirSiglasWDL() {
     }
   }
 }, 2000); // 2000 milissegundos = 2 segundos
+
+setTimeout(function traduzirSiglasColunas() {
+  let todasSiglas = document.querySelectorAll(".wg_header");
+
+  for (let i = 0; i < todasSiglas.length; i++) {
+    let ConteudoSiglaColuna = todasSiglas[i].innerHTML;
+    console.log(ConteudoSiglaColuna);
+    switch (ConteudoSiglaColuna) {
+      case "MP":
+        todasSiglas[i].innerHTML = "PARTIDAS";
+        break;
+
+      case "W":
+        todasSiglas[i].innerHTML = "V";
+        break;
+
+      case "D":
+        todasSiglas[i].innerHTML = "E";
+        break;
+
+      case "L":
+        todasSiglas[i].innerHTML = "D";
+        break;
+    }
+  }
+}, 2000); // 2000 milissegundos = 2 segundos
