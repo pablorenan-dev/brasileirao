@@ -46,11 +46,9 @@ main {
 main div {
   margin-top: 17vh;
   transform: scale(1.5);
-}
-
-main div {
   border-radius: 8px;
   overflow: hidden;
+  animation: slideInOut 5s ease-in-out;
 }
 
 .wg_header {
@@ -84,5 +82,16 @@ main div {
   main div {
     margin-top: 4.2vh;
     transform: scale(1.1);
+  }
+}
+
+@keyframes slideInOut {
+  0% {
+    transform: translateY(-100%) scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1.5);
+    opacity: 1;
   }
 }
