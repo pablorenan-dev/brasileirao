@@ -33,6 +33,7 @@ header img:hover {
 header h1 {
   font-size: 5vh;
   font-weight: bold;
+  text-align: center;
 }
 
 main {
@@ -43,9 +44,8 @@ main {
 }
 
 main div {
-  margin-top: 18vh;
-  width: 100%vh;
-  transform: scale(1.5);
+  margin-top: 20vh;
+  transform: scale(1.6);
 }
 
 main div {
@@ -55,4 +55,34 @@ main div {
 
 .wg_header {
   text-align: center;
+}
+
+.wg_form {
+  border-radius: 2px;
+}
+
+.wg_form:hover {
+  transform: scale(105%);
+  transition: 0.2s;
+}
+
+@media (max-width: 733px) {
+  main div {
+    margin-top: 14.5vh;
+    transform: scale(1.4);
+  }
+}
+
+@media (max-width: 653px) {
+  main div {
+    margin-top: 8vh;
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 535px) {
+  main div {
+    margin-top: 4.2vh;
+    transform: scale(1.1);
+  }
 }
