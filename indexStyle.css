@@ -39,10 +39,20 @@ main {
   height: 85vh;
   display: flex;
   justify-content: center;
+  overflow: auto;
 }
 
 main div {
   margin-top: 18vh;
   width: 100%vh;
   transform: scale(1.5);
+}
+
+main div {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.wg_header {
+  text-align: center;
 }
