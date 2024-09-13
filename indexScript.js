@@ -59,3 +59,20 @@ setTimeout(function traduzirSiglasColunas() {
     }
   }
 }, 2000); // 2000 milissegundos = 2 segundos
+
+setTimeout(function adicionarBordasNosTimesClassificacao() {
+  let todosTrs = document.querySelectorAll("tr");
+
+  for (let i = 2; i < todosTrs.length; i++) {
+    // todosTrs[i].style.borderLeft = "2px solid black";
+    if (i < 6) {
+      todosTrs[i].style.borderLeft = "2px solid blue";
+    } else if (i > 5 && i < 8) {
+      todosTrs[i].style.borderLeft = "2px solid orange";
+    } else if (i > 7 && i < 14) {
+      todosTrs[i].style.borderLeft = "2px solid green";
+    } else if (i > 11 && i < 21) {
+      todosTrs[i].style.borderLeft = "2px solid red";
+    }
+  }
+}, 2000);

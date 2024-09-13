@@ -85,7 +85,7 @@ main div {
   }
 }
 
-@keyframes slideInOut {
+/* @keyframes slideInOut {
   0% {
     transform: translateY(-100%) scale(1.5);
     opacity: 0;
@@ -94,4 +94,4 @@ main div {
     transform: translateY(0) scale(1.5);
     opacity: 1;
   }
-}
+} */
