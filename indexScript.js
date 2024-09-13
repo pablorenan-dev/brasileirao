@@ -71,7 +71,7 @@ setTimeout(function adicionarBordasNosTimesClassificacao() {
       todosTrs[i].style.borderLeft = "2px solid orange";
     } else if (i > 7 && i < 14) {
       todosTrs[i].style.borderLeft = "2px solid green";
-    } else if (i > 11 && i < 21) {
+    } else if (i > 17 && i < 22) {
       todosTrs[i].style.borderLeft = "2px solid red";
     }
   }
