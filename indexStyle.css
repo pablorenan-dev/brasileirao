@@ -23,11 +23,16 @@ header {
 header img {
   height: 13vh;
   padding-right: 2vh;
+  transition: transform 0.2s;
 }
 
 header img:hover {
-  transform: scale(105%);
-  transition: 0.2s;
+  transform: scale(1.05);
+}
+
+label {
+  font-size: large;
+  text-align: right;
 }
 
 header h1 {
@@ -37,18 +42,62 @@ header h1 {
 }
 
 main {
-  height: 85vh;
   display: flex;
-  justify-content: center;
-  overflow: auto;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -20px;
 }
 
-main div {
-  margin-top: 17vh;
-  transform: scale(1.5);
+main > div {
+  width: 50%;
+  max-width: 700px;
+  margin-top: 0px;
   border-radius: 8px;
   overflow: hidden;
-  animation: slideInOut 5s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#legenda {
+  padding-top: 10px;
+  background-color: rgb(200, 200, 200);
+  width: 100%;
+}
+
+#legenda a {
+  font-size: small;
+  padding-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--color-verde);
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .wg_header {
@@ -60,38 +109,96 @@ main div {
 }
 
 .wg_form:hover {
-  transform: scale(105%);
-  transition: 0.2s;
+  transform: scale(1.05);
+  transition: transform 0.2s;
 }
 
 @media (max-width: 733px) {
-  main div {
-    margin-top: 14.5vh;
-    transform: scale(1.4);
+  main > div {
+    margin-top: 15px;
   }
 }
 
 @media (max-width: 653px) {
-  main div {
-    margin-top: 8vh;
-    transform: scale(1.2);
+  main > div {
+    margin-top: 10px;
   }
 }
 
 @media (max-width: 535px) {
-  main div {
-    margin-top: 4.2vh;
-    transform: scale(1.1);
+  main > div {
+    margin-top: 5px;
   }
 }
 
-/* @keyframes slideInOut {
-  0% {
-    transform: translateY(-100%) scale(1.5);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0) scale(1.5);
-    opacity: 1;
-  }
-} */
+.legenda-container {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #d6d6d6;
+  border-radius: 4px;
+}
+
+.legenda-lista {
+  list-style-type: none;
+  padding: 0;
+}
+
+.legenda-lista li {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  font-size: small;
+}
+
+.titulo-legenda {
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.legenda-icone {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.laranja {
+  background-color: orange;
+}
+
+.verde {
+  background-color: green;
+}
+
+.vermelho {
+  background-color: red;
+}
+
+.cinza {
+  background-color: #888;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.verde-check {
+  color: #00ff00;
+  margin-right: 10px;
+}
+
+.vermelho-cross {
+  color: #ff0000;
+  margin-right: 10px;
+}
+
+.wg_nowrap {
+  white-space: nowrap;
+  text-align: left;
+}
