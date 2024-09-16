@@ -9,35 +9,39 @@
 
 :root {
   --color-verde: #00fc69;
+  --color-verde-dark: #00d85f;
 }
 
 header {
   width: 100%;
-  background-color: var(--color-verde);
+  background: linear-gradient(
+    to right,
+    var(--color-verde),
+    var(--color-verde-dark)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
   height: 15vh;
+  border-bottom: 2px solid var(--color-verde-dark);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header img {
   height: 13vh;
   padding-right: 2vh;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 header img:hover {
   transform: scale(1.05);
 }
 
-label {
-  font-size: large;
-  text-align: right;
-}
-
 header h1 {
   font-size: 5vh;
   font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 

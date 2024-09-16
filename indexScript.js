@@ -1,9 +1,7 @@
 setTimeout(function traduzirSiglasWDL() {
   let todasSiglas = document.querySelectorAll(".wg_width_90");
-  console.log(todasSiglas.length, "tamanho");
-  console.log(todasSiglas, "tudo");
+
   let sigla = todasSiglas[3].children;
-  console.log(sigla[0].innerHTML);
 
   for (let i = 0; i < todasSiglas.length; i++) {
     let siglasChildren = todasSiglas[i].children;
@@ -33,7 +31,6 @@ setTimeout(function traduzirSiglasColunas() {
 
   for (let i = 0; i < todasSiglas.length; i++) {
     let ConteudoSiglaColuna = todasSiglas[i].innerHTML;
-    console.log(ConteudoSiglaColuna);
     switch (ConteudoSiglaColuna) {
       case "MP":
         todasSiglas[i].innerHTML = "PARTIDAS";
