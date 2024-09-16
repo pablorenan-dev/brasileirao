@@ -55,6 +55,8 @@ main > div {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideInOut 3s;
+  z-index: -1;
 }
 
 #legenda {
@@ -201,4 +203,15 @@ img {
 .wg_nowrap {
   white-space: nowrap;
   text-align: left;
+}
+
+@keyframes slideInOut {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
